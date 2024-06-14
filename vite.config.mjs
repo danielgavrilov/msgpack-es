@@ -7,8 +7,8 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
     build: {
         lib: {
-            formats: ['es'],
-            fileName: () => 'index.mjs', // Need function otherwise it produces 'index.mjs.js'!
+            formats: ['cjs', 'es'],
+            fileName: (format) => format === 'cjs' ? 'index.cjs' : 'index.mjs',
             entry: resolve(__dirname, 'src/index.ts'),
         },
     },
