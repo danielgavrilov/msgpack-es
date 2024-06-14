@@ -1,5 +1,5 @@
 {
-  "name": "msgpack-es",
+  "name": "@gavrilov/msgpack-es",
   "version": "0.0.5",
   "description": "Excellent ECMAScript MessagePack implementation for 85% of people.",
   "author": {
@@ -20,9 +20,9 @@
   "homepage": "https://samcla.us/projects",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samclaus/msgpack-es.git"
+    "url": "git+https://github.com/danielgavrilov/msgpack-es.git"
   },
-  "bugs": "https://github.com/samclaus/msgpack-es/issues",
+  "bugs": "https://github.com/danielgavrilov/msgpack-es/issues",
   "scripts": {
     "test": "vitest",
     "build": "vite build",
