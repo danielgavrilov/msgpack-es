@@ -1,3 +1,7 @@
+# Patched version of `msgpack-es`. This will only exist until [a patch gets merged](https://github.com/samclaus/msgpack-es/pull/2).
+
+---
+
 `msgpack-es` is a modern ECMAScript (ES; commonly referred to as "JavaScript") implementation of the [MessagePack](https://msgpack.org) format, which is a binary format with similar functionality to JSON. MessagePack data is often much more _compact_ than equivalent JSON data, but you should note that modern `JSON.stringify()` and `JSON.parse()` implementations will likely be _faster_ than `msgpack-es` for typical data&mdash;**choose your trade-offs**! If, for example, you are sending a lot of JSON objects with large byte arrays as Base64-encoded strings, MessagePack will be substantially more compact than JSON, and `msgpack-es` might actually encode/decode faster than the built-in JSON functions.
 
 - [Strengths](#strengths)
